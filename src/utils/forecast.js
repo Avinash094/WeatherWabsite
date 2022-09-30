@@ -11,7 +11,7 @@ const foreCast = (latitude, longitude, callback) => {
       callback("Unable to find location", undefined);
     } else {
       callback(
-        undefined,`It is currently  ${body.current.temperature} degree out. It feels like ${body.current.feelslike} degree out.`
+        undefined,`It is currently  ${body.current.temperature} degree out. It feels like ${body.current.feelslike} degree out.Here Humidity is ${body.current.humidity} % and Weather Condition is ${body.current.weather_descriptions} and visiblity is ${body.current.visibility} %`
       );
     }
   });
